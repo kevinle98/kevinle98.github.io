@@ -9,23 +9,32 @@
     <style>
       /* Add CSS directly in the head for simplicity */
       body, html {
+        color: white;
+        font-family: 'mono-space';
         background-color: #201f27;
         margin: 0;
         height: 100%;
-        overflow: hidden; /* Optional: Remove scrollbars for full canvas display */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
       }
       #canvas-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh; /* Full height of the viewport */
+        flex-shrink: 0;
+      }
+      h2 {
+        text-align: center;
+        margin: 10px 0;
+        font-family: 'mono-space';
       }
     </style>
   </head>
   <body>
     <div id="canvas-container">
+      <script src="sketch.js"></script>
       <!-- p5.js will attach the canvas here -->
     </div>
-    <script src="sketch.js"></script>
+    <h2>Select a character class by pressing 1-3 (Prior to a roll).</h2>
+    <h2>Click to roll and press 'Space' to proceed to the next skill check.</h2>
   </body>
 </html>
