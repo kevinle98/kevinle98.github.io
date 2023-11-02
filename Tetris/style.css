@@ -1,0 +1,78 @@
+/* Universal styling to reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #201f27;
+    /* Optional: Adds a dark background color */
+    overflow: hidden;
+}
+
+/* Style the canvas element - optional depending on your design */
+canvas {
+    z-index: 1;
+    position: relative;
+    transform: scale(1.5);
+    transform-origin: center center;
+
+    /* Optional: Adds a border around the game for clarity */
+}
+
+#game-container {
+    position: relative;
+    width: 480px;
+    margin: auto;
+}
+
+#info-container {
+    position: relative;
+    width: 350px;
+    margin: auto;
+    transform: translateY(-130px);
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+#score {
+    color: white;
+    font-size: 18px;
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: bold;
+}
+
+#level {
+    color: white;
+    font-size: 18px;
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: bold;
+    text-align: right;
+}
+
+#game-over {
+    color: white;
+    position: absolute;
+    font-family: 'Anonymous Pro', monospace;
+    font-size: larger;
+
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 3;
+    display: none;
+}
+
+@font-face {
+    font-family: 'Anonymous Pro';
+    src: url('assets/AnonymousPro-Regular.ttf') format('truetype');
+}
