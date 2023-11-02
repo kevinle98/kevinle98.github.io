@@ -3,4 +3,4 @@
 <h2>Please take a look!</h2>
 
 ## [Tetris](./Tetris/index.html)
-## [D20](./D20/script.js)
+## [D20](./D20/index.html)
