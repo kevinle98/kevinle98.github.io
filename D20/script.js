@@ -87,6 +87,9 @@ function preload() {
 }
 
 function setup() {
+    let canvas = createCanvas(800, 800);
+    canvas.parent('canvas-container'); 
+    
     createCanvas(800, 800);
     textFont('monospace');
     generateNewSkillCheck();
