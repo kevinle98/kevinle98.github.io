@@ -83,20 +83,20 @@ let currentSkillCheck
 let lastSkillCheckIndex = -1;
 
 function preload() {
-    D20 = loadImage('D20.png');
+  D20 = loadImage('D20.png');
 }
 
 function setup() {
-    let canvas = createCanvas(800, 800);
-    canvas.parent('canvas-container'); 
-    
     createCanvas(800, 800);
+    let canvas = createCanvas(800, 800);
+    canvas.parent('canvas-container');
+    
     textFont('monospace');
     generateNewSkillCheck();
 }
 
 function draw() {
-    background(24);
+    background(15);
     drawDice();
     drawRollingText();
     drawClassInfo();
@@ -105,8 +105,8 @@ function draw() {
 }
 
 function drawDice() {
-    imageMode(CENTER);
-    image(D20, width / 2, height /2, width / 4, height / 4);
+   imageMode(CENTER);
+   image(D20, width / 2, height /2, width / 4, height / 4);
 }
 
 function drawRollingText() {
